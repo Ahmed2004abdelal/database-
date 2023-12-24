@@ -61,3 +61,28 @@ on b.train_ID = t.train_ID
 group by capacity
 
 
+
+
+
+
+create table Train_Station.info.operators(
+operator_ID int identity(1,1),
+operator_name varchar(50) not null default('nageb saweras'),
+country varchar(50) default('egypt'),
+website varchar(50) not null default('https://WWW.traincompany.com'),
+information varchar(80),
+
+constraint operator_PK primary key (operator_ID),
+)
+select* from Train_Station.info.operators
+
+INSERT INTO Train_Station.info.operators (operator_name, country, website, information)
+VALUES
+('ahmed samer', 'Palestine', 'https://WWW.ahmedsamircopmany.com', 'travel by train'),
+('marwan-pablo', 'ALX', 'https://WWW.maro.com', 'elaljfajskfkgahgjdsh'),
+('marwan-mossa', 'elma3ady', 'https://WWW.mossa.com', 'ashfiohash'),
+('abyusif', 'cairo', 'https://WWW.abyusif.com', 'askjhglhakldhgioeogjmalfjkn'),
+('abo-elAnwar', 'cairo', 'https://WWW.elanwar.com', 'aklhgqwvioqnuirbwui'),
+('mussa-sam', 'el-esma3elya', 'https://WWW.mussa-sam.com', 'iwasfjiwencvioqn');
+
+
