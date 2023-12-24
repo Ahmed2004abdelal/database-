@@ -64,7 +64,6 @@ group by capacity
 
 
 
-
 create table Train_Station.info.operators(
 operator_ID int identity(1,1),
 operator_name varchar(50) not null default('nageb saweras'),
